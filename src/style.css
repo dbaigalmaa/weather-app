@@ -1,0 +1,53 @@
+a.cels,
+a.fahr {
+  text-decoration: none;
+  color: #212529;
+  font-weight: 200;
+}
+a.cels {
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.main {
+  width: 400px;
+}
+.high-temp {
+  font-weight: 600;
+  display: inline-block;
+}
+.low-temp {
+  display: inline;
+  font-weight: 200;
+}
+.today-weather {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.five-day-weather {
+  font-size: 13px;
+}
+.set {
+  display: inline-block;
+  width: 70px;
+}
+.city-date {
+  display: inline-block;
+  font-size: 20px;
+}
+.temp {
+  font-size: 40px;
+}
+.metric {
+  display: inline;
+  position: relative;
+  bottom: 16px;
+}
+.pic {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.detail {
+  font-size: 10px;
+  text-align: right;
+  margin-right: 50px;
+}

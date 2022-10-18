@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>SheCodes Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main border p-3 mx-auto mt-3 text-center">
+      <form class="d-flex search-form" role="search">
+        <input
+          class="form-control me-2 rounded-pill"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-primary rounded-pill"
+          id="search-button"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+      <div class="today-weather my-4">
+        <div class="city-date me-5">
+          <h5 class="city"></h5>
+          <div class="date fs-6" id="date"></div>
+        </div>
+        <span class="pic">☀️</span>
+        <span class="temp"></span>
+        <div class="metric">
+          <a href="#" class="cels" id="cels">°C</a> /
+          <a href="#" class="fahr" id="fahr">°F</a>
+        </div>
+        <div class="detail">
+          <div id="hum"></div>
+          <div id="wind"></div>
+        </div>
+      </div>
+      <div class="five-day-weather my-3">
+        <div class="set">
+          <div class="date text-primary">Mon 03</div>
+          <div class="high-temp">
+            19°
+            <div class="low-temp">/10°</div>
+          </div>
+
+          <div class="col">☀️</div>
+        </div>
+        <div class="set">
+          <div class="date text-primary">Tue 04</div>
+          <div class="high-temp">
+            21°
+            <div class="low-temp">/12°</div>
+          </div>
+
+          <div class="col">🌥</div>
+        </div>
+        <div class="set">
+          <div class="date text-primary">Wed 05</div>
+          <div class="high-temp">
+            20°
+            <div class="low-temp">/14°</div>
+          </div>
+
+          <div class="col">🌦</div>
+        </div>
+        <div class="set">
+          <div class="date text-primary">Thu 06</div>
+          <div class="high-temp">
+            17°
+            <div class="low-temp">/9°</div>
+          </div>
+
+          <div class="col">🌤</div>
+        </div>
+        <div class="set">
+          <div class="date text-primary">Fri 07</div>
+          <div class="high-temp">
+            22°
+            <div class="low-temp">/10</div>
+          </div>
+
+          <div class="col">☀️</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
