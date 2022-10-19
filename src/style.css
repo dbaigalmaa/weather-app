@@ -8,6 +8,10 @@ a.cels {
   font-weight: 700;
   pointer-events: none;
 }
+.github {
+  text-align: center;
+  font-size: 10px;
+}
 
 .main {
   width: 400px;
